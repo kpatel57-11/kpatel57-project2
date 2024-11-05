@@ -14,6 +14,12 @@ function addProduct() {
     const productName = productInput.value.trim().toLowerCase();
     const productPrice = parseInt(priceInput.value);
 
+    // Validation: for all input
+     if (isNaN(productPrice) && productPrice <= 0 && productName.length < 2) {
+        alert('at least 2 characters required for product. Price must be > 0.');
+        return;
+    }
+
     // Validation: Product name must be at least 2 characters
     if (productName.length < 2) {
         alert('at least 2 characters required for product.');
