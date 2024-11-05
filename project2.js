@@ -16,13 +16,13 @@ function addProduct() {
 
     // Validation: Product name must be at least 2 characters
     if (productName.length < 2) {
-        alert('Product name must be at least 2 characters long.');
+        alert('at least 2 characters required for product.');
         return;
     }
 
     // Validation: Price must be a positive number
     if (isNaN(productPrice) || productPrice <= 0) {
-        alert('Please enter a valid positive price.');
+        alert('Price must be > 0.');
         return;
     }
 
