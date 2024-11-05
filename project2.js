@@ -89,7 +89,7 @@ function searchProduct() {
     if (results) {
         alert(`Matching Products:\n${results}`);
     } else {
-        alert(`${searchText} matching products found.`);
+         alert(`${searchText} not found in products and price .`);
     }
 }
 
